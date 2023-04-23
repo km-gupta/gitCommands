@@ -1,0 +1,96 @@
+git status  --> To check the status of the perticular branch
+git init  --> To initilise git for the perticular folder
+
+git branch  --> check the branch name
+git branch -v  --> check branch name with commit hash and commit message
+git branch --merged --> Already merge branches
+git branch --no-merged --> not merged 
+git branch -d develop --> to delete the branch (gives error if develop is not merged)
+git push -d origin <remoteBranchName>  --> to delete remote branch
+git branch -D develop --> no error and branch gets deleted
+
+git add --a  --> add to the staging area (unmodified)
+git add .  --> to reverse the file to staging area (modified)
+
+git commit -m "Initial Commit"  --> To commit the added stage work
+git commit -a -m "Message"  --> To commit by skipping the staging area
+
+git merge <branchName>  --> To merge brachName in this perticular branch
+
+git log  --> to see all previous commits. After that press q.
+git log -p --> to see all previous commits with status. After that press q.
+git log --stat --> short log for previous commits.
+git log --pretty=oneline --> one line log
+git log --pretty=short --> short explanation of logs
+git log --pretty=full --> full explanation of logs
+git log --since=2.days --> 2 days work will show
+git log --pretty=format:"%h -- %an"  --> show in this format
+git log -p -1  -->  Last 1 commit
+rm -rf .git  --> To delete Git Repository
+git clone https://github.com/navinreddy20/Javacode.git  --> To clone the github repository
+pwd --> Present Working Directory
+ls --> List Content
+cd --> Change Directory
+
+clear --> clear the screen
+
+touch <FileName>  --> to generate blank file in linux working folder
+
+touch error.log
+
+touch .gitignore  --> to generate blank file to ignore any file available in a working directory
+
+git diff --> Compare the working directory to staging directory. 
+
+git diff --staged  --> Compare old commit with the current staging area.
+
+git commit -a -m "Direct Commit"  --> Tracked file will directly go to commit.
+
+git rm <fileName>  --> It remove the file from working directory and stage it.
+
+git mv <oldFileName> <newFileName>  --> Change the file name in git and stage
+
+(*Use tab key to call the name of half written file name)
+
+git rm --cached <fileName>  --> to untrack any file
+
+git commit --amend  --> to change the previous commit
+
+git restore --staged <fileName>  --> To unstage any file
+
+git checkout -- <fileName>  --> To restore upto previous commit for a file
+
+git checkout -f  --> To restore upto previous commit for all changes (Dengourous)
+
+
+git remote  --> to check repository is link or not
+git romote -v  --> to check the repository
+
+
+
+git config --global alias.<shortName> <presentName>  --> Creating alias, this will change the command name according to our name.
+
+
+git checkout -b <BranchName>  --> to create a new branch
+git checkout <BranchName>  --> switch to the branch name
+
+
+
+Merge Conflict --> 
+Conflict resolution markers  -->   <<<<< Head : index.Html
+				    >>>>> Issue : Index.Html
+
+
+
+Branching Workflow: 	1. Long Running Branches  (master, develop, proposed Branches)  --> Long lasting till the project work is going on.
+			2. Topic Branches  (TypedJSint,) --> Present till the topic running, after that we will delete that branch.
+
+
+GitHub
+-------
+
+*Create a repository, give the link to the git.
+change the branch in the git.
+git push -u origin <branchName>
+
+git push origin <Branch name in git>:<GitHub name>  --> If we want to create a branch with different name in gitHub.
